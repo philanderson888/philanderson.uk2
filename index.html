@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Phil Anderson">
+    <meta name="description" content="Beginner Templates On Learning CSS Grid and Flexbox and basic web page design">
+    <meta name="keywords" content="HTML CSS Grid Flexbox">
+    <meta name="date.created" content="2023-04-02">
+    <title>PhilAnderson.uk</title>
+    <style>
+        /*------------------------------------*\
+        #WHOLE-APP
+        \*------------------------------------*/
+        
+        /**
+        * General CSS comments look like this
+        */
+        
+        html{
+            font-family: sans-serif;
+            background-color: rgb(185, 152, 111);
+        }
+
+
+
+
+
+        /*------------------------------------*\
+        #GRID-LAYOUT
+        \*------------------------------------*/
+        .container{
+            display:grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 2fr repeat(1, 1fr);
+        }
+        .nav{
+            grid-column-start: 1;
+            grid-column-end:5;
+            grid-row-start: 1;
+            grid-row-end:1;
+
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            column-gap: 5vw;
+        }
+        .nav__nav-item{
+            display: inline-block;
+        }
+        .row{
+            background-color: rgb(148, 109, 183);
+            padding: 2vmin;
+            grid-column-start: 1;
+            grid-column-end: 6
+        }
+
+
+
+
+
+        /*------------------------------------*\
+        #FONTS-AND-TEXT-STYLING
+        \*------------------------------------*/
+
+        .bold{
+            font-weight: bold;
+        }
+        a:link{
+            text-decoration: none;
+        }
+        a:visited{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        a:active{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+
+    <div class="container">
+
+
+
+
+
+        <nav class="nav">
+
+            <nav-item class="nav__nav-item  bold">
+                <a href="#">PhilAnderson.uk</a>
+            </nav-item>
+
+            <nav-item class="nav__nav-item">
+                <a href="about.html">About</a>
+            </nav-item>
+
+        </nav>
+
+
+
+
+
+        <div class="row">
+            <a href="archive/index.html">Archive - HTML Single Files</a>
+        </div>
+        <div class="row">
+            <a href="https://github.com/philanderson888/html-css-javascript">HTML CSS Javascript GitHub Notes</a>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>
