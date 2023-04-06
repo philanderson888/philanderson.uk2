@@ -37,15 +37,21 @@ main{
     grid-row-start: 1;
     grid-row-end:1;
 
+    /**
+    * Navbar flexbox
+    */
+
     display:flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     column-gap: 5vw;
 }
+
 .nav__nav-item{
     display: inline-block;
 }
+
 .row{
     background-color: rgb(148, 109, 183);
     padding: 2vmin;
