@@ -21,6 +21,8 @@
   </script>
   <!-- End Google Tag Manager -->
 
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -64,45 +66,13 @@
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-    <div class="container d-flex justify-content-between align-items-center">
-
-      <div id="logo">
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a>-->
-        <h1><a href="index.html">Phil Anderson</a></h1>
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="page.html">Page</a></li>
-          <li><a class="nav-link scrollto" href="charity.html">Charity Local</a></li>
-          <li><a class="nav-link scrollto" href="https://philips-supercool-site-bd6a87.webflow.io">Charity On WIX</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="https://philanderson881.wixsite.com/phil-andersonwebdev/portfolio">Portfolio</a></li>
-
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Personal</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="https://github.com/philanderson888/personal/issues/28">Testimonies 2020</a></li>
-              <li class="dropdown"><a href="#"><span>Journal</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="https://github.com/philanderson888/personal/issues/32">Journal 2019</a></li>
-                  <li><a href="https://github.com/philanderson888/personal/issues/8">Life Story at 2019</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="blog.html">Blog</a></li>
-          <li><a class="nav-link scrollto" href="/old-site">Old Site</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-    </div>
-  </header><!-- End Header -->
+  <div id="header-placeholder"></div>
+  
+  <script>
+    $(function(){
+    $("#header-placeholder").load("nav.html");
+    });
+  </script>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
