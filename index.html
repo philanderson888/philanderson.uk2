@@ -68,93 +68,18 @@
 
   <div id="header-placeholder"></div>
   
-  <!--
   <script>
     $(function(){
-    $("#header-placeholder").load("header.html");
+      $("#header-placeholder").load("header.html", function(){
+        // Re-initialize any event listeners or plugins after loading
+        $('.mobile-nav-toggle').on('click', function(){
+          $('#navbar').toggleClass('navbar-mobile');
+        });
+      });
     });
   </script>
-  -->
 
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-    <div class="container d-flex justify-content-between align-items-center">
 
-      <div id="logo">
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a>-->
-        <h1><a href="index.html">Phil Anderson</a></h1>
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-
-          <li class="dropdown"><a href="#"><span>Charity</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a class="nav-link scrollto" href="charity.html">Charity</a></li>
-              <li><a class="nav-link scrollto" href="https://jesusislord.uk">Christian Shop At https://jesusislord.uk</a></li>
-              <li><a class="nav-link scrollto" href="https://www.relume.io/app/project/P1165402__peAGSDbVuz7RVw4O1P8I9YAv725o3xK4cbUdSDAlzY#mode=sitemap">Raising Funds Charity Site Map By Relume</a></li>
-            </ul>
-          </li>
-
-          <li><a class="nav-link scrollto" href="https://jesusislord.uk">Shop</a></li>
-
-          <li><a class="nav-link scrollto" href="#about">Services</a></li>
-          
-          <li class="dropdown"><a href="#"><span>Portfolio</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="https://github.com/philanderson888/course-notes">Technical Notes Github</a></li>
-              <li><a href="https://github.com/philanderson888/javascript">JavaScript Github</a></li>
-              <li><a href="https://mellifluous-rugelach-2383f5.netlify.app">Javascript Website</a></li>
-              <li><a href="https://github.com/philanderson888/nodejs">NodeJS Github</a></li>
-              <li><a href="https://zippy-clafoutis-00719e.netlify.app">NodeJS Website</a></li>
-              <li><a href="https://github.com/philanderson888/flutter">Flutter GitHub</a></li>
-              <li><a href="https://github.com/philanderson888/scripts/tree/master/azure/bash">Linux Scripting Linux On Azure Github</a></li>
-              <li><a href="https://github.com/philanderson888/vue">VueJS Github</a></li>
-              <li><a href="https://philanderson888accounting.netlify.app">Accounting App Which Reads From Google Sheets</a></li>
-              <li><a href="https://routecheck-ir0u.glide.page/dl/d0a5f4">Regular Joe Route Checking App</a></li>
-            </ul>
-          </li>
-
-          <li class="dropdown"><a href="#"><span>Personal</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="https://github.com/philanderson888/personal/issues/28">Testimonies 2020</a></li>
-              <li class="dropdown"><a href="#"><span>Journal</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="https://github.com/philanderson888/personal/issues/32">Journal 2019</a></li>
-                  <li><a href="https://github.com/philanderson888/personal/issues/8">Life Story at 2019</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-
-          <li><a class="nav-link scrollto" href="blog.html">Blog</a></li>
-
-          <li class="dropdown"><a href="#"><span>Archive</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="portfolio.html">Older Sites And Work</a></li>
-              <li><a href="https://github.com/philanderson888/showcase">Old Showcase Site For HTML CSS and Javascript</a>
-              <li><a href="https://html-css-javascript-demo.netlify.app">Deployed Showcase Site For HTML CSS and Javascript</a>
-              <li><a class="nav-link scrollto" href="/old-site">Old Site</a></li>
-              <li class="dropdown"><a href="#"><span>Requires Login</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="https://app.netlify.com/teams/philanderson888/sites?page=2">List of deployed sites on Netlify</a></li>
-                </ul>
-              </li>
-              <li>Wix Trial Site<a href="https://philips-supercool-site-bd6a87.webflow.io">https://philips-supercool-site-bd6a87.webflow.io</a></li>
-              <li>Template<a href="https://philanderson881.wixsite.com/phil-andersonwebdev/portfolio">https://philanderson881.wixsite.com/phil-andersonwebdev/portfolio</a></li>
-            </ul>
-          </li>
-
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-  </header>
-  
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
