@@ -14,4 +14,8 @@ have to fix invalid content on home page ...
 
 have to fix invalid fake portolios on home page ...
 
+contact page does not work
 
+## 003 
+
+current version
