@@ -1,0 +1,70 @@
+/*------------------------------------*\
+#WHOLE-APP
+\*------------------------------------*/
+
+/**
+* General CSS comments look like this
+*/
+
+html{
+    font-family: Helvetica;
+    background-color: rgb(185, 152, 111);
+}
+
+
+
+
+
+/*------------------------------------*\
+#GRID-LAYOUT
+\*------------------------------------*/
+.container{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 15vh repeat(1, 1fr);
+}
+.nav{
+    grid-column-start: 1;
+    grid-column-end:5;
+    grid-row-start: 1;
+    grid-row-end:1;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    column-gap: 5vw;
+}
+.nav__nav-item{
+    display: inline-block;
+}
+.row{
+    background-color: rgb(148, 109, 183);
+    padding: 2vmin;
+    grid-column-start: 1;
+    grid-column-end: 6
+}
+
+
+
+
+
+/*------------------------------------*\
+#FONTS-AND-TEXT-STYLING
+\*------------------------------------*/
+
+.bold{
+    font-weight: bold;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
