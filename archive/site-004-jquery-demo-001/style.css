@@ -1,0 +1,84 @@
+/* ------------------------------------------ */
+/*              Global Styles                 */
+/* ------------------------------------------ */
+
+body {
+margin: 0;
+padding: 0;
+line-height: 1.6;
+}
+h1 {
+font-size: 24px;
+margin: 0 auto 20px;
+padding: 20px 0 0;
+width: 940px;
+}
+section {
+border-top: #ddd solid 1px;
+margin: 0 auto;
+padding: 80px 0;
+width: 940px;
+}
+section h1 {
+margin: 0 0 20px;
+padding: 0;
+}
+section h2 {
+font-size: 20px;
+margin: 40px auto 10px;
+}
+pre code {
+background-color: #f5f5f5;
+border: #ddd solid 1px;
+border-radius: 5px;
+display: block;
+padding: 20px;
+}
+#fontsize {
+float: left;
+margin: 0 20px 0 0;
+}
+#inverse {
+float: left;
+}
+
+/* ------------------------------------------ */
+/*              Navigation Styles             */
+/* ------------------------------------------ */
+
+#global-nav {
+    background-color: #3886FC;
+    }
+    #global-nav ul li a {
+    color: #fff;
+    background-color: #3886FC;
+    font-size: 12px;
+    padding: 5px 20px;
+    text-decoration: none;
+    }
+    #global-nav ul li a:hover {
+    background-color: #5093F8;
+    }
+    #global-nav ul li ul {
+    display: none;
+    }
+    @media screen and ( max-width: 939px ) {
+    #responsive-btn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    }
+    h1, section {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+    }
+    section h1 {
+    padding-left: 0;
+    padding-right: 0;
+    }
+    pre {
+    overflow: hidden;
+    }
+}

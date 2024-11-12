@@ -1,0 +1,110 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    position: relative;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu li {
+    position: relative;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  /* Submenu styles */
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+  }
+  
+  .submenu li a {
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    display: block;
+  }
+  
+  /* Mobile menu toggle */
+  .menu-icon {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .show {
+    display: block !important;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #333;
+        width: 300px; /* Make menu full width */
+        position: absolute;
+        top: 60px;
+        left: -300px;
+        padding: 10px 0;
+        box-sizing: border-box; /* Ensure padding doesn’t add extra width */
+      }
+    
+    .menu li {
+        text-align: left;
+        width: 150px; /* Full width for each menu item */
+      }
+    
+      .menu li a {
+        padding: 10px 20px; /* Add padding for readability */
+        color: #fff;
+        display: block;
+        font-size: 18px; /* Increase font size if needed */
+      }
+
+    .menu-icon {
+      display: block;
+    }
+
+
+
+  }
+  
