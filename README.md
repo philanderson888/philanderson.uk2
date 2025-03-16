@@ -1,2 +1,3 @@
 # philanderson.uk2
-temporary replacement for philanderson.uk while i fix it and upgrade to latest version of contentful and gatsby
+
+Migrate site to philanderson.uk via bolt - slowly go through and move all links etc to other site
